@@ -1,0 +1,13 @@
+/* pages/home/home.wxss */
+.top-theme{
+  height: 260rpx;
+  width: 100%;
+}
+
+.swiper-img{
+  width: 750rpx;
+  height: 360rpx;
+}
+.banner1{
+  height: 360rpx;
+}

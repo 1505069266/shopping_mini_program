@@ -1,0 +1,12 @@
+<!--pages/home/home.wxml-->
+<view>
+  <image class="top-theme" src="{{topTheme.entrance_img}}"></image>
+  <swiper class="banner1" indicator-dots="{{true}}"  autoplay="{{true}}" >
+    <swiper-item class="" item-id="" wx:for="{{banner1.items}}" wx:for-item="banners">
+      <image class="swiper-img" src="{{banners.img}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="">
+        
+      </image>
+    </swiper-item>
+  </swiper>
+  <s-category-grid grid="{{grid}}"></s-category-grid>
+</view>
