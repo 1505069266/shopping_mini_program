@@ -28,10 +28,17 @@ Page({
     let banner1 = await Http.request({url: 'banner.json'})
     let res = await Http.request({url:'theme.json'})
     let category = await Http.request({url:'category.json'})
+    let activity = await Http.request({url:'activity.json'})
+    let spu = await Http.request({url:"spu.json"})
+    let title = await Http.request({url: "themes.json"})
+    console.log(spu)
     this.setData({
       banner1: banner1,
       topTheme: res[0],
-      grid: category
+      grid: category,
+      activity,
+      spu,
+      title_img:title[1].title_img
     })
   },
 

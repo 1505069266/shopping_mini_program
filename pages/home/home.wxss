@@ -2,7 +2,10 @@
 .top-theme{
   height: 260rpx;
   width: 100%;
+  display: flex;
 }
+
+
 
 .swiper-img{
   width: 750rpx;
@@ -10,4 +13,11 @@
 }
 .banner1{
   height: 360rpx;
+}
+
+.activity_img{
+  width: 750rpx;
+  height: 310rpx;
+  margin-top:20rpx;
+  display: flex;
 }
