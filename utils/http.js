@@ -4,7 +4,7 @@
 import {config} from './../config/config.js'
 import {promisic} from './util.js'
 class Http{
-  static async request({url, data,callback, method='GET'}){
+  static async request({url, data, method='GET'}){
     //wx.request
      const res = await promisic(wx.request)({
       url: `${config.apiBaseUrl}${url}`,

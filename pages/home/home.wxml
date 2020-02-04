@@ -1,17 +1,26 @@
 <!--pages/home/home.wxml-->
-<view>
-  <image class="top-theme" src="{{topTheme.entrance_img}}"></image>
-  <swiper class="banner1" indicator-dots="{{true}}"  autoplay="{{true}}" >
-    <swiper-item class="" item-id="" wx:for="{{banner1.items}}" wx:for-item="banners">
-      <image class="swiper-img" src="{{banners.img}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="">
-        
-      </image>
-    </swiper-item>
-  </swiper>
-  <s-category-grid grid="{{grid}}"></s-category-grid>
-  <image class="activity_img" src="{{activity.entrance_img}}"></image>
-  <s-spu-scroll spu-list="{{spu.items}}" theme="{{title_img}}">
-  
-  </s-spu-scroll>
-  <image src="{{}}"></image>
-</view>
+
+<l-loadmore show="{{2}}}" type="end"  >
+  <view slot="content">
+    <image class="top-theme" src="{{topTheme.entrance_img}}"></image>
+    <swiper class="banner1" indicator-dots="{{true}}"  autoplay="{{true}}" >
+      <swiper-item class="" item-id="" wx:for="{{banner1.items}}" wx:for-item="banners" wx:key="index">
+        <image class="swiper-img" src="{{banners.img}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="">
+          
+        </image>
+      </swiper-item>
+    </swiper>
+    <s-category-grid grid="{{grid}}"></s-category-grid>
+    <image class="activity_img" src="{{activity.entrance_img}}"></image>
+    <s-spu-scroll spu-list="{{spu.items}}" theme="{{title_img}}">
+    
+    </s-spu-scroll>
+    <image class="quality" src="http://i2.sleeve.7yue.pro/m9.png"></image>
+    <s-hot-list banner="{{hotBanner}}"></s-hot-list>
+    <image class="quality" src="http://i2.sleeve.7yue.pro/m10.png"></image>
+    <view class="spu-bottom">
+      <image class="guess" src="../../imgs/home/title@interest.png"></image>
+      <l-water-flow generic:l-water-flow-item="s-spu-preview"></l-water-flow>
+    </view>
+  </view>
+</l-loadmore>

@@ -31,14 +31,16 @@ Page({
     let activity = await Http.request({url:'activity.json'})
     let spu = await Http.request({url:"spu.json"})
     let title = await Http.request({url: "themes.json"})
-    console.log(spu)
+    let hotBanner = await Http.request({url:"banner2.json"})
+    wx.lin.renderWaterFlow(spu.items)
     this.setData({
       banner1: banner1,
       topTheme: res[0],
       grid: category,
       activity,
       spu,
-      title_img:title[1].title_img
+      title_img:title[1].title_img,
+      hotBanner
     })
   },
 

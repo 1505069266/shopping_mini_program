@@ -21,3 +21,28 @@
   margin-top:20rpx;
   display: flex;
 }
+
+.quality{
+  margin: 20rpx 0 20rpx 0;
+  width: 750rpx;
+  height: 880rpx;
+  display: flex;
+}
+.spu-bottom{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20rpx;
+  background-color: white;
+}
+
+.guess{
+  width: 690rpx;
+  height: 70rpx;
+  margin-bottom: 30rpx;
+}
+
+.loadMore{
+  display: flex;
+  align-items: center;
+}
